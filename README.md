@@ -60,6 +60,13 @@ Be prepared for feedback and discussion. Make the necessary changes locally, com
 
 Repeat this process until your changes are approved and merged into the original repository.
 
+---
+
+### 🚀 Live Demo
+You can access the fully deployed live version of the app directly here:  
+👉 **[https://project-gold-ring.reflex.run/](https://project-gold-ring.reflex.run/)**
+
+
 # App Initialization Steps
 
 Follow these steps to set up and run the Reflex app from scratch in PowerShell.
