@@ -1,0 +1,109 @@
+/* =============================================================================
+   Buddy App — CSS Keyframe Animations
+   =============================================================================
+   This stylesheet is loaded via the `stylesheets` prop in rx.App().
+   It defines all the @keyframes animations used in the app.
+   
+   These animations are applied in Python via the `animation` CSS prop:
+       animation="gradient_shift 12s ease infinite"
+   ============================================================================= */
+
+
+/* Slow-moving gradient for page backgrounds.
+   Creates a gentle breathing effect on the warm cream background. */
+@keyframes gradient_shift {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+
+/* Gentle floating motion for the buddy character.
+   Makes the character feel alive and friendly. */
+@keyframes buddy_float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+
+/* Subtle pulsing glow for suggestion cards.
+   Draws attention to the AI's suggestions without being distracting. */
+@keyframes pulse_glow {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(199, 91, 18, 0.08);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(199, 91, 18, 0.18);
+    }
+}
+
+
+/* Fade-in with upward slide for page content.
+   Used when navigating between pages for a smooth entrance. */
+@keyframes slide_up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Fade-in animation for elements appearing on screen. */
+@keyframes fade_in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Gentle scale-in for cards and modals. */
+@keyframes scale_in {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* Continuous rotation for loading spinners. */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* ---- Global Smooth Scrolling ---- */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ---- Hide scrollbar but keep functionality ---- */
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}

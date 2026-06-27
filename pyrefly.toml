@@ -1,0 +1,10 @@
+project-includes = [
+    "**/*.py*",
+    "**/*.ipynb",
+]
+python-interpreter = "Project/venv/Scripts/python.exe"
+site-package-path = ["Project/venv/Lib/site-packages"]
+search-path = ["Project"]
+
+[errors]
+bad-class-definition = false
