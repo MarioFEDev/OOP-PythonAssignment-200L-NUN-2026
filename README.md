@@ -1,4 +1,4 @@
-# OOP-PythonAssignment-200L-NUN-2026
+# OOP-PythonAssignment-200L-NUN-2026 / App Initialization Steps
 This is the repository to submit your python project.
 
 Creating a pull request is a common workflow in collaborative software development, particularly when using version control systems like Git. The original repository is https://github.com/eyahi/OOP-PythonAssignment-200L-NUN-2026.git and you do not have write access to it, you will need to make a pull request for me to see your work. The steps to do pull request are given below
